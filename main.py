@@ -150,7 +150,7 @@ class TwitterBot:
     else: message = {'wrong attachment' : 'Post was not sent. Send only picture attachment (not gif/video).'}
 
     notifdm = api.send_direct_message(recipient_id=dmsender, text=message[status])
-    #api.destroy_direct_message(int(notifdm.id))
+    #api.destroy_direct_message(int(notifdm.id)) .
     logging.info(f'DM No {i+1} was sent. Status = {status}')
     time.sleep(10)
     
