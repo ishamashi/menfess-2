@@ -21,7 +21,7 @@ logging.basicConfig(
 
 class TwitterBot:
 
-  # initialization
+  # initialization ishamashi
   def __init__(self, checked = 0, posted = 0, notsent = 0, dms = 0):
     self.auth = tweepy.OAuthHandler(config.consumer_key, config.consumer_secret)
     self.auth.set_access_token(config.access_token, config.access_token_secret)
